@@ -177,12 +177,6 @@ def main():
     total_train_time = time.time() - start_train_time
     print(f"Обучение завершено. Общее время: {total_train_time / 60:.2f} мин.")
 
-    
-    try:
-        torch.save(model.state_dict(), SAVE_MODEL_PATH)
-        print(f"Модель сохранена в: {SAVE_MODEL_PATH}")
-    except Exception as e:
-        print(f"Ошибка при сохранении модели: {e}")
 
 if __name__ == '__main__':
     main() 
